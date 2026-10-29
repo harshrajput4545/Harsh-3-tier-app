@@ -1,3 +1,4 @@
+
 import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -9,7 +10,7 @@ function App() {
         async function fetchProducts() {
             try {
                 const { data } = await axios.get(
-                    'http://localhost:4000/api/products'
+                    'http://16.4.24.127:4000/api/products'
                 );
                 setProducts(data);
             } catch (err) {

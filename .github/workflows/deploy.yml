@@ -22,7 +22,7 @@ jobs:
 
             echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
-            cd ~/docker-compose-mern
+            cd /home/ubuntu/docker-compose-mern
 
             docker compose pull
             docker compose up -d --remove-orphans
